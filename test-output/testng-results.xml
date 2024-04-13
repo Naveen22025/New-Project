@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-13T13:18:28 IST" name="Suite" finished-at="2024-04-13T13:18:55 IST" duration-ms="26507">
+    <groups>
+    </groups>
+    <test started-at="2024-04-13T13:18:28 IST" name="Test" finished-at="2024-04-13T13:18:55 IST" duration-ms="26507">
+      <class name="com.EmpMonitor.test.Register">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.EmpMonitor.test.Register@4ddced80]" started-at="2024-04-13T13:18:28 IST" name="OpenBrowser" finished-at="2024-04-13T13:18:32 IST" duration-ms="3197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:com.EmpMonitor.test.Register@4ddced80]" started-at="2024-04-13T13:18:32 IST" name="Login" finished-at="2024-04-13T13:18:36 IST" duration-ms="3826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="RegisterName()[pri:0, instance:com.EmpMonitor.test.Register@4ddced80]" started-at="2024-04-13T13:18:36 IST" name="RegisterName" finished-at="2024-04-13T13:18:36 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterName -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.EmpMonitor.test.Register@4ddced80]" started-at="2024-04-13T13:18:36 IST" name="Logout" finished-at="2024-04-13T13:18:55 IST" duration-ms="19189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.EmpMonitor.test.Register@4ddced80]" started-at="2024-04-13T13:18:55 IST" name="CloseBrowser" finished-at="2024-04-13T13:18:55 IST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- com.EmpMonitor.test.Register -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
