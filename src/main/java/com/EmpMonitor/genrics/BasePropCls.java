@@ -24,6 +24,7 @@ public class BasePropCls {
 	public void OpenBrowser() {
 		
 		driver= new ChromeDriver();
+		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
@@ -51,7 +52,7 @@ public class BasePropCls {
 		
 		Dashboard d = new Dashboard(driver);
 	    WebElement click = d.getImg();
-	    f.Action(click, driver);
+	    f.Actiondouble(click, driver);
 	    d.getLogout().click();
 		
 		

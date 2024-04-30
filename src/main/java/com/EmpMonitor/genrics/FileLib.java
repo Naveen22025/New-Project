@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -54,21 +55,27 @@ public class FileLib {
 			s.selectByVisibleText(text);
 		}
 
-		public void SelectDrop(WebElement element, int index) {
+		public void SelectDropIn(WebElement element, int index) {
 
 			Select s = new Select(element);
 			s.selectByIndex(index);
 		}
 		
-		public void Action(WebElement click, WebDriver driver) {
+		public void Actionmove(WebElement move, WebDriver driver) {
+			
+			Actions a = new Actions(driver);
+			a.moveToElement(move).perform();
+		}
+		
+      public void Actiondouble(WebElement click, WebDriver driver) {
 			
 			Actions a = new Actions(driver);
 			a.doubleClick(click).perform();
-		}
+		} 
 		
-		public void Explicit(WebDriver driver, WebElement element, Duration duration) {
+		public void Explicit(WebDriver driver, WebElement element, Duration i) {
 			
-			WebDriverWait wait = new WebDriverWait(driver, duration);
+			WebDriverWait wait = new WebDriverWait(driver, i);
 			wait.until(ExpectedConditions.visibilityOf(element));
 			
 		}

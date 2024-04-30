@@ -13,12 +13,6 @@ public class Dashboard {
 	@FindBy(linkText="Log Out")
 	private WebElement logout;
 	
-	@FindBy(xpath="//i[@title='Employee']")
-	private WebElement Employee;
-	
-	@FindBy(linkText="Employee-Details")
-	private WebElement EmpDetails;
-	
 	 public Dashboard (WebDriver driver) {
 	 PageFactory.initElements(driver, this);
   }
@@ -31,13 +25,7 @@ public class Dashboard {
 		return logout;
 	}
 
-	public WebElement getEmployee() {
-		return Employee;
-	}
-
-	public WebElement getEmpDetails() {
-		return EmpDetails;
-	}
+	
 	 
 	 
 }

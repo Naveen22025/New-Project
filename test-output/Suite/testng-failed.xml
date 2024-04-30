@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.EmpMonitor.test.TestTimesheet">
+        <methods>
+          <include name="Login"/>
+          <include name="timesheet"/>
+          <include name="Logout"/>
+          <include name="CloseBrowser"/>
+          <include name="OpenBrowser"/>
+        </methods>
+      </class> <!-- com.EmpMonitor.test.TestTimesheet -->
+      <class name="com.EmpMonitor.test.Register">
+        <methods>
+          <include name="Login"/>
+          <include name="RegisterName"/>
+          <include name="Logout"/>
+          <include name="CloseBrowser"/>
+          <include name="OpenBrowser"/>
+        </methods>
+      </class> <!-- com.EmpMonitor.test.Register -->
+      <class name="com.EmpMonitor.test.EmpAttendance">
+        <methods>
+          <include name="Login"/>
+          <include name="Logout"/>
+          <include name="EmployeAttendance"/>
+          <include name="CloseBrowser"/>
+          <include name="OpenBrowser"/>
+        </methods>
+      </class> <!-- com.EmpMonitor.test.EmpAttendance -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
