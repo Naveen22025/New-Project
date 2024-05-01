@@ -25,7 +25,7 @@ public class Timesheets {
 
     public Timesheets(WebDriver driver) {
 	PageFactory.initElements(driver, this);
-}
+   }
 
 	public WebElement getTimesheet() {
 		return timesheet;

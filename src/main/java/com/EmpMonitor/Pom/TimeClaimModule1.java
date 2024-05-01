@@ -7,15 +7,15 @@ import org.openqa.selenium.support.PageFactory;
 
 public class TimeClaimModule1 {
 
-	@FindBy(xpath="//span[text()='Time Claim']")
-	private WebElement timeclaim;
+	@FindBy(xpath="//span[.='Time Claim']")
+	private WebElement timeclaim1;
 	
 	@FindBy(id="reportrange")
 	private WebElement daterange;
 	
-	@FindBy(xpath="//li[text()='Last Month']")
+	@FindBy(xpath="//li[text()='Last 30 Days']")
 	private WebElement lastmonthbtn;
-	
+
 	@FindBy(id="statusField")
 	private WebElement status;
 	
@@ -28,8 +28,20 @@ public class TimeClaimModule1 {
 	@FindBy(id="attendance-btn")
 	private WebElement attendancebtn;
 	
+	@FindBy(id="idle-btn")
+	private WebElement idlebtn;
+	
 	@FindBy(xpath="//label[.='Off']")
 	private WebElement autoapprovebtn;
+
+	@FindBy(xpath="//input[@class='multipleChecktimeclaim mr-4']")
+	private WebElement alluserselected;
+	
+	@FindBy(id="actionButton")
+	private WebElement actionbtn;
+	
+	@FindBy(xpath="(//span[.='×'])[8]")
+	private WebElement declinedbtn;
 	
 	@FindBy(xpath="(//button[@class='btn btn-primary btn-block'])[1]")
 	private WebElement timeclaimbtn;
@@ -37,23 +49,49 @@ public class TimeClaimModule1 {
 	@FindBy(id="modalReasonShowOption")
 	private WebElement timeclaimapprovebtn;
 	
-	@FindBy(className="btn btn-secondary")
-	private WebElement cancilbtn;
+    @FindBy(xpath="(//button[@class='btn btn-secondary'])[3]")
+    private WebElement cancilbtn;
 	
-	public TimeClaimModule1(WebDriver driver) {
+    public TimeClaimModule1(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-
-	public WebElement getTimeclaim() {
-		return timeclaim;
+	
+	public WebElement getAlluserselected() {
+		return alluserselected;
 	}
 
-	public WebElement getDaterange() {
-		return daterange;
+	public WebElement getAutoapprovebtn() {
+		return autoapprovebtn;
+	}
+	
+	public WebElement getActionbtn() {
+		return actionbtn;
 	}
 
-	public WebElement getLastmonthbtn() {
-		return lastmonthbtn;
+	public WebElement getDeclinedbtn() {
+		return declinedbtn;
+	}
+
+	public WebElement getIdlebtn() {
+		return idlebtn;
+
+	}
+
+	public void setIdlebtn(WebElement idlebtn) {
+		this.idlebtn = idlebtn;
+	}
+
+	
+	public WebElement getCancilbtn() {
+		return cancilbtn;
+	}
+
+	public WebElement getTimeclaimbtn() {
+		return timeclaimbtn;
+	}
+
+	public WebElement getTimeclaimapprovebtn() {
+		return timeclaimapprovebtn;
 	}
 
 	public WebElement getStatus() {
@@ -72,21 +110,21 @@ public class TimeClaimModule1 {
 		return attendancebtn;
 	}
 
-	public WebElement getAutoapprovebtn() {
-		return autoapprovebtn;
+	public WebElement getTimeclaim1() {
+		return timeclaim1;
 	}
 
-	public WebElement getTimeclaimbtn() {
-		return timeclaimbtn;
+	public WebElement getDaterange() {
+		// TODO Auto-generated method stub
+		return daterange;
 	}
 
-	public WebElement getTimeclaimapprovebtn() {
-		return timeclaimapprovebtn;
-	}
-
-	public WebElement getCancilbtn() {
-		return cancilbtn;
+	public WebElement getLastmonthbtn() {
+		// TODO Auto-generated method stub
+		return lastmonthbtn;
 	}
 	
+	
+
 	
 }
