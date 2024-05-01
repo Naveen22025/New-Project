@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.EmpMonitor.test.EmpAttendance">
+      <class name="com.EmpMonitor.test.TestTimeClaming">
         <methods>
+          <include name="ClaimTest"/>
           <include name="Login"/>
           <include name="Logout"/>
-          <include name="EmployeAttendance"/>
           <include name="CloseBrowser"/>
           <include name="OpenBrowser"/>
         </methods>
-      </class> <!-- com.EmpMonitor.test.EmpAttendance -->
+      </class> <!-- com.EmpMonitor.test.TestTimeClaming -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

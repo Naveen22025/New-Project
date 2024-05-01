@@ -58,20 +58,6 @@ public class Employee {
 	
 	@FindBy(id="inActiveStatus")
 	private WebElement suspended;
-	
-	@FindBy(xpath="//button[@type='button'][@onclick='deletedUserList()']")
-	private WebElement deletehistory;
-	
-	@FindBy(xpath="(//span[.='×'])[19]")
-	private WebElement closehistory;
-	
-	public WebElement getClosehistory() {
-		return closehistory;
-	}
-
-	public void setClosehistory(WebElement closehistory) {
-		this.closehistory = closehistory;
-	}
 
 	public WebElement getActive() {
 		return active;
@@ -79,10 +65,6 @@ public class Employee {
 
 	public WebElement getSuspended() {
 		return suspended;
-	}
-
-	public WebElement getDeletehistory() {
-		return deletehistory;
 	}
 
 	public WebElement getExport() {
@@ -110,14 +92,11 @@ public class Employee {
 	}
 
 	public WebElement getRole() {
-    	Select s = new Select(role);
-    	s.selectByVisibleText("Employee ");
+    	
 		return role;
 	}
 
 	public WebElement getLocations() {
-		Select s = new Select(locations);
-    	s.selectByVisibleText("banglore");
 		return locations;
 	}
 

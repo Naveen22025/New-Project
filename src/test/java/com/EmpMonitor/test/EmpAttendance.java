@@ -2,6 +2,19 @@ package com.EmpMonitor.test;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.time.Duration;
 
 import org.testng.annotations.Test;
@@ -10,9 +23,10 @@ import com.EmpMonitor.Pom.Employee;
 import com.EmpMonitor.Pom.EmployeeAttendance;
 import com.EmpMonitor.genrics.BasePropCls;
 
+
 public class EmpAttendance extends BasePropCls{
 
-	@Test
+	@Test(priority=2)
 	public void EmployeAttendance() throws InterruptedException {
 		
 		Employee e= new Employee(driver);

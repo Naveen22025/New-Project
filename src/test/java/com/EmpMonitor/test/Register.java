@@ -5,6 +5,22 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import java.time.Duration;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 import com.EmpMonitor.Pom.Dashboard;
 import com.EmpMonitor.Pom.Employee;
@@ -14,7 +30,7 @@ import com.EmpMonitor.genrics.FileLib;
 public class Register extends BasePropCls{
 
 	
-	@Test
+	@Test(priority=1)
 	public void RegisterName() throws InterruptedException {
 		
 		System.out.println("Register User");
@@ -22,30 +38,27 @@ public class Register extends BasePropCls{
 		Employee e = new Employee(driver);
 		e.getEmployee().click();
 		e.getEmpDetails().click();
-		e.getRole();
+		f.SelectDrop(e.getRole(), "Employee ");
 		
-		e.getLocations();
+		f.SelectDrop(e.getLocations(), "Bangalore");
 		
 		e.getDept().click();
 		e.getSeldept().click();
 		
-		Thread.sleep(3000);
+		f.Explicit(driver, e.getExport(), Duration.ofSeconds(10));
 		e.getExport().click();
 		e.getShiftexport().click();
-		Thread.sleep(3000);
+		f.Explicit(driver, e.getSubmitexport(), Duration.ofSeconds(10));
 		e.getSubmitexport();
 		
-		Thread.sleep(3000);
+		
 		e.getPagination();
 		
-		Thread.sleep(2000);
+		f.Explicit(driver, e.getActive(), Duration.ofSeconds(10));
 		e.getActive().click();
-		Thread.sleep(2000);
+		f.Explicit(driver, e.getSuspended(), Duration.ofSeconds(10));
 		e.getSuspended().click();
-		Thread.sleep(2000);
-		e.getDeletehistory().click();
-		Thread.sleep(2000);
-		e.getClosehistory().click();
+		
 		
 	}
 }
