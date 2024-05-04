@@ -1,99 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-01T22:45:26 IST" name="Suite" finished-at="2024-05-01T22:48:09 IST" duration-ms="162638">
+  <suite started-at="2024-05-04T16:08:24 IST" name="Default suite" finished-at="2024-05-04T16:09:02 IST" duration-ms="37616">
     <groups>
     </groups>
-    <test started-at="2024-05-01T22:45:26 IST" name="Test" finished-at="2024-05-01T22:48:09 IST" duration-ms="162638">
-      <class name="com.EmpMonitor.test.TestTimeClaming">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.EmpMonitor.test.TestTimeClaming@1b1473ab]" started-at="2024-05-01T22:46:48 IST" name="OpenBrowser" finished-at="2024-05-01T22:46:50 IST" duration-ms="2418" status="PASS">
+    <test started-at="2024-05-04T16:08:24 IST" name="Default test" finished-at="2024-05-04T16:09:02 IST" duration-ms="37616">
+      <class name="com.EmpMonitor.test.TestReports">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.EmpMonitor.test.TestReports@2ea227af]" started-at="2024-05-04T16:08:25 IST" name="OpenBrowser" finished-at="2024-05-04T16:08:28 IST" duration-ms="3778" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:com.EmpMonitor.test.TestTimeClaming@1b1473ab]" started-at="2024-05-01T22:46:50 IST" name="Login" finished-at="2024-05-01T22:46:56 IST" duration-ms="5292" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:com.EmpMonitor.test.TestReports@2ea227af]" started-at="2024-05-04T16:08:28 IST" name="Login" finished-at="2024-05-04T16:08:33 IST" duration-ms="4293" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="ClaimTest()[pri:4, instance:com.EmpMonitor.test.TestTimeClaming@1b1473ab]" started-at="2024-05-01T22:46:56 IST" name="ClaimTest" finished-at="2024-05-01T22:47:21 IST" duration-ms="25330" status="PASS">
+        <test-method signature="ReportDownload()[pri:0, instance:com.EmpMonitor.test.TestReports@2ea227af]" started-at="2024-05-04T16:08:33 IST" name="ReportDownload" finished-at="2024-05-04T16:08:59 IST" duration-ms="26513" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClaimTest -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:com.EmpMonitor.test.TestTimeClaming@1b1473ab]" started-at="2024-05-01T22:47:21 IST" name="Logout" finished-at="2024-05-01T22:47:24 IST" duration-ms="2739" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.EmpMonitor.test.TestTimeClaming@1b1473ab]" started-at="2024-05-01T22:47:24 IST" name="CloseBrowser" finished-at="2024-05-01T22:47:24 IST" duration-ms="230" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseBrowser -->
-      </class> <!-- com.EmpMonitor.test.TestTimeClaming -->
-      <class name="com.EmpMonitor.test.EmpAttendance">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.EmpMonitor.test.EmpAttendance@4690b489]" started-at="2024-05-01T22:45:26 IST" name="OpenBrowser" finished-at="2024-05-01T22:45:31 IST" duration-ms="4272" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenBrowser -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:com.EmpMonitor.test.EmpAttendance@4690b489]" started-at="2024-05-01T22:45:31 IST" name="Login" finished-at="2024-05-01T22:45:34 IST" duration-ms="3602" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="EmployeAttendance()[pri:2, instance:com.EmpMonitor.test.EmpAttendance@4690b489]" started-at="2024-05-01T22:45:34 IST" name="EmployeAttendance" finished-at="2024-05-01T22:46:12 IST" duration-ms="37635" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EmployeAttendance -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:com.EmpMonitor.test.EmpAttendance@4690b489]" started-at="2024-05-01T22:46:12 IST" name="Logout" finished-at="2024-05-01T22:46:15 IST" duration-ms="2869" status="PASS">
+        </test-method> <!-- ReportDownload -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.EmpMonitor.test.TestReports@2ea227af]" started-at="2024-05-04T16:08:59 IST" name="Logout" finished-at="2024-05-04T16:09:02 IST" duration-ms="2620" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.EmpMonitor.test.EmpAttendance@4690b489]" started-at="2024-05-01T22:46:15 IST" name="CloseBrowser" finished-at="2024-05-01T22:46:15 IST" duration-ms="250" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.EmpMonitor.test.TestReports@2ea227af]" started-at="2024-05-04T16:09:02 IST" name="CloseBrowser" finished-at="2024-05-04T16:09:02 IST" duration-ms="327" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-      </class> <!-- com.EmpMonitor.test.EmpAttendance -->
-      <class name="com.EmpMonitor.test.TestTimesheet">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.EmpMonitor.test.TestTimesheet@149e0f5d]" started-at="2024-05-01T22:46:15 IST" name="OpenBrowser" finished-at="2024-05-01T22:46:17 IST" duration-ms="2376" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenBrowser -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:com.EmpMonitor.test.TestTimesheet@149e0f5d]" started-at="2024-05-01T22:46:17 IST" name="Login" finished-at="2024-05-01T22:46:21 IST" duration-ms="4048" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="timesheet()[pri:3, instance:com.EmpMonitor.test.TestTimesheet@149e0f5d]" started-at="2024-05-01T22:46:21 IST" name="timesheet" finished-at="2024-05-01T22:46:45 IST" duration-ms="23565" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- timesheet -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:com.EmpMonitor.test.TestTimesheet@149e0f5d]" started-at="2024-05-01T22:46:45 IST" name="Logout" finished-at="2024-05-01T22:46:48 IST" duration-ms="2577" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.EmpMonitor.test.TestTimesheet@149e0f5d]" started-at="2024-05-01T22:46:48 IST" name="CloseBrowser" finished-at="2024-05-01T22:46:48 IST" duration-ms="217" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseBrowser -->
-      </class> <!-- com.EmpMonitor.test.TestTimesheet -->
-      <class name="com.EmpMonitor.test.Register">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.EmpMonitor.test.Register@2f7c2f4f]" started-at="2024-05-01T22:47:24 IST" name="OpenBrowser" finished-at="2024-05-01T22:47:26 IST" duration-ms="2393" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenBrowser -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:com.EmpMonitor.test.Register@2f7c2f4f]" started-at="2024-05-01T22:47:26 IST" name="Login" finished-at="2024-05-01T22:47:30 IST" duration-ms="3525" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="RegisterName()[pri:1, instance:com.EmpMonitor.test.Register@2f7c2f4f]" started-at="2024-05-01T22:47:30 IST" name="RegisterName" finished-at="2024-05-01T22:48:06 IST" duration-ms="36588" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RegisterName -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:com.EmpMonitor.test.Register@2f7c2f4f]" started-at="2024-05-01T22:48:06 IST" name="Logout" finished-at="2024-05-01T22:48:09 IST" duration-ms="2355" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.EmpMonitor.test.Register@2f7c2f4f]" started-at="2024-05-01T22:48:09 IST" name="CloseBrowser" finished-at="2024-05-01T22:48:09 IST" duration-ms="222" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseBrowser -->
-      </class> <!-- com.EmpMonitor.test.Register -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.EmpMonitor.test.TestReports -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

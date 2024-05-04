@@ -4,7 +4,9 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Iterator;
 import java.util.Properties;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.poi.EncryptedDocumentException;
@@ -79,7 +81,18 @@ public class FileLib {
 			wait.until(ExpectedConditions.visibilityOf(element));
 			
 		}
+		public void HandleWindows(WebDriver driver) {
+			Set<String> Allwh = driver.getWindowHandles();
+			Iterator<String> it = Allwh.iterator();
+			String Parentwh = it.next();
+			String Childwh = it.next();
+			driver.switchTo().window(Parentwh);
+			driver.close();
+			driver.switchTo().window(Childwh);
 		
-	}
+			}
+		}
+		
+	
 
 
