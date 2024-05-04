@@ -3,6 +3,15 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.EmpMonitor.test.Register">
+        <methods>
+          <include name="Login"/>
+          <include name="RegisterName"/>
+          <include name="Logout"/>
+          <include name="CloseBrowser"/>
+          <include name="OpenBrowser"/>
+        </methods>
+      </class> <!-- com.EmpMonitor.test.Register -->
       <class name="com.EmpMonitor.test.TestTimeClaming">
         <methods>
           <include name="ClaimTest"/>
@@ -12,6 +21,33 @@
           <include name="OpenBrowser"/>
         </methods>
       </class> <!-- com.EmpMonitor.test.TestTimeClaming -->
+      <class name="com.EmpMonitor.test.EmpAttendance">
+        <methods>
+          <include name="Login"/>
+          <include name="Logout"/>
+          <include name="EmployeAttendance"/>
+          <include name="CloseBrowser"/>
+          <include name="OpenBrowser"/>
+        </methods>
+      </class> <!-- com.EmpMonitor.test.EmpAttendance -->
+      <class name="com.EmpMonitor.test.TestTimesheet">
+        <methods>
+          <include name="Login"/>
+          <include name="timesheet"/>
+          <include name="Logout"/>
+          <include name="CloseBrowser"/>
+          <include name="OpenBrowser"/>
+        </methods>
+      </class> <!-- com.EmpMonitor.test.TestTimesheet -->
+      <class name="com.EmpMonitor.test.TestReports">
+        <methods>
+          <include name="ReportDownload"/>
+          <include name="Login"/>
+          <include name="Logout"/>
+          <include name="CloseBrowser"/>
+          <include name="OpenBrowser"/>
+        </methods>
+      </class> <!-- com.EmpMonitor.test.TestReports -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
